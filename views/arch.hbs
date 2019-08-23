@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>  
+    <link href="/assets/arch.css" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+   
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+    <script>
+            $(function flippy(){
+                $(".flip-horizontal").flip({
+                      trigger: 'click'
+                });
+                $(".flip-vertical").flip({
+                    axis: 'x',
+                      trigger: 'click'
+                });
+            });
+              </script>
+</head>
+<body>
+  {{> navbar}}
+    <div class="head2" style="width:100%;">
+        <h1 align="center">Welcome To B.arch Page</h1>        
+  </div>
+  
+       <div class="mainpara">
+
+ <div class="my_container">
+<p>
+   welcome to the Official B.arch Page. Get all the books that you need here!!!!
+     <br>
+     <br>
+    Architecture is the art and science of designing and making buildings and other
+     physical structures and various universities and institutes across the nation conduct 
+     entrance examination for admission to Bachelor 
+    of Architecture (B. Arch) which is an undergraduate level academic course in architecture.
+</p>
+<div class="main">
+<div class="pic1">
+<img src="https://www.johndcook.com/chem_books_small.jpg">
+ </div> 
+ <div class="pic2">
+ <img src="https://www.slideteam.net/media/catalog/product/cache/1/thumbnail/7d067c260c62f222e173d0437099215d/s/t/stack_of_textbooks_with_different_colors_stock_photo_Slide01.jpg"> 
+ </div>
+ <div class="pic3">
+ <img src="https://cdn-images-1.medium.com/max/1600/1*MykufWg6D_3BWuV8lG2xbg.jpeg"> 
+ </div> 
+  <div class="pic4">
+ <img src="https://5.imimg.com/data5/RU/UB/GLADMIN-4755675/chemical-engineering-500x500.png"> 
+ </div> 
+  <div class="pic5">
+ <img src="http://imshopping.rediff.com/imgchkbooks/200-300/books/pixs/03/9788131727003.jpg"> 
+ </div> 
+   <div class="pic6">
+ <img src="https://images-na.ssl-images-amazon.com/images/I/61zFnR7-zZL._SX448_BO1,204,203,200_.jpg"> 
+ </div>
+  <div class="pic7">
+ <img src="https://images-na.ssl-images-amazon.com/images/I/61LIxLe33AL.jpg"> 
+ </div>
+</div>
+</div>
+</div>
+          
+          <div class="card-columns classy">
+            {{#each result5  as |result5|}} 
+  <div class="card" style="height: 300px;width:80%">
+        <div id="flip-this" class="flip-horizontal"> 
+      <div class="front">
+     
+  <div class="card-body">
+    <h1 class="bookhead">BOOK</h1>
+    
+    <h1 class="card-title" align="center">{{task.book}}</h1>  
+    </div>
+</div>
+    <div class="back">
+      <h3>Name:- {{task.name}}</h3>
+     
+       <h3>College:- {{task.college}}</h3>
+      
+        <h3>email:- {{task.email}}</h3>
+      
+         <h3>price:- {{task.price}}</h3>
+        
+  </div>
+    </div>
+  </div>
+  {{/each}}
+ 
+  </div> 
+  {{> footer}}
+</body>
+</html>

@@ -1,0 +1,71 @@
+#class1{
+    font-size: 40px;
+    color: crimson;
+    background-color: beige;
+}
+#id1{
+    background-color: bisque;
+    color: black;
+    font-size: 22px;
+    padding: 17px;
+}
+.class2{
+    background-color: azure;
+    font-size: 20px;
+    border-color: bisque;
+    color: darkblue;
+    padding:15px;
+}
+.another{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100px;
+}
+
+.whole{
+    background-image: url(background.jpg);
+    background-repeat: no-repeat;
+    background-size: 1530px 780px;
+}
+
+#head1{
+    font-size: 80px;
+    color: whitesmoke;
+    padding: 100px;
+    margin-top:  100px;
+    margin-left :60px;
+    text-align: center;
+}
+
+.do1 {
+    margin-left: 650px;
+    margin-right: 50px;
+    color: black;
+    font-size: 40px;
+    
+}
+.do{
+    color:black;
+    font-size: 40px;
+}
+.sizing{
+    
+    width: 500px;
+    
+    margin-top:20px;
+    margin-left:500px;
+    margin-right:60px;
+    margin-bottom: 20px;
+    
+}
+#alerting{
+    font-size:15px;
+    font-family: Courier;
+    padding: 20px;
+}
+
+#p1, #p2 , #p3 {
+    display: none;
+    color: red;
+    font-size: 10px;
+}

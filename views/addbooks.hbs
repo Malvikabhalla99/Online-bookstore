@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+ 
+
+<html lang="en">
+
+ 
+
+<head>
+
+ 
+
+    <meta charset="UTF-8">
+
+ 
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+ 
+
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+ 
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+ 
+
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+
+ 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+
+ 
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+ 
+
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Lobster" rel="stylesheet">
+
+ 
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+ 
+
+    <title>Add Book Data</title>
+
+ 
+
+    <link rel="stylesheet" href="modifiedcss.css">
+
+    <script>
+
+function myFunction() {
+
+   alert("Form Submitted Successfully!!");
+
+}
+
+</script>
+
+ 
+
+ 
+
+   
+
+ 
+
+    <style>
+
+ 
+
+/* Style inputs */
+
+ 
+
+input[type=text], select, textarea {
+
+ 
+
+    width: 100%;
+
+ 
+
+    padding: 12px;
+
+ 
+
+    border: 1px solid #ccc;
+
+ 
+
+    margin-top: 6px;
+
+ 
+
+    margin-bottom: 16px;
+
+ 
+
+    resize: vertical;
+
+ 
+
+}
+
+
+
+
+input[type=submit] {
+
+ 
+
+    background-color: #4CAF50;
+
+ 
+
+    color: white;
+
+ 
+
+    padding: 12px 20px;
+
+ 
+
+    border: none;
+
+ 
+
+    cursor: pointer;
+
+ 
+
+}
+
+
+
+
+input[type=submit]:hover {
+
+ 
+
+    background-color: #45a049;
+
+ 
+
+}
+
+
+
+
+#addp
+
+ 
+
+        {
+
+    margin :0px;
+
+    padding :0px;
+
+    position: flex;
+
+    padding-top: 30%;
+
+    padding-left:30%;
+
+           
+
+ 
+
+        }
+
+ 
+
+</style>
+
+ 
+
+</head>
+
+ 
+
+<body>
+
+ {{> navbar}}
+
+<div class="container">
+
+  <h2>Add Books Form</h2>
+
+  <form action="/addbooks" method="post">
+
+    <div class="form-group">
+
+      <label for="fullname"> Full Name:</label>
+
+    
+
+       <input type="text" class="form-control" id="name" name="name" placeholder="Students name..">
+
+ 
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="email">Email:</label>
+
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="college">College Name:</label>
+
+      <input type="text" class="form-control" id="college" placeholder="Enter password" name="college">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="book">Book Name:</label>
+
+      <input type="text" class="form-control" id="book" placeholder="Enter Book Name" name="book">
+
+    </div>
+
+    <div class="form-group">
+
+      <label for="price">Price:</label>
+
+      <input type="number" class="form-control" id="price" placeholder="Rs....." name="price">
+
+    </div>
+
+    <div class="form-group">
+
+    <label for="branch">Branch</label>
+
+    <select class="form-control" id="branch" name="branch">
+
+      <option>ECE</option>
+
+      <option>MCA</option>
+
+      <option>MAE</option>
+
+      <option>M.Tech</option>
+
+      <option>Novels</option>
+
+      <option>Phd</option>
+
+      <option>Arhitecture</option>
+
+      <option>CSE</option>
+
+      <option>IT</option>
+
+    </select>
+
+  </div>
+
+  
+
+    <button type="submit" class="btn btn-default"  onclick="myFunction()" >Submit</button>
+
+  </form>
+
+</div>
+<br>
+ 
+{{> footer}}
+         
+
+ 
+
+    
+
+ 
+
+</body>
+
+ 
+
+</html>
+

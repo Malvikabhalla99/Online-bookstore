@@ -1,0 +1,25 @@
+{
+  "name": "doing-passport",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "express": "^4.16.4",
+    "express-hbs": "^1.0.4",
+    "express-session": "^1.15.6",
+    "handlebars": "^4.0.12",
+    "handlebars-helper-css": "^0.1.0",
+    "handlebars-layouts": "^3.1.4",
+    "hbs": "^4.0.1",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^4.41.2",
+    "sqlite3": "^4.0.4"
+  }
+}
